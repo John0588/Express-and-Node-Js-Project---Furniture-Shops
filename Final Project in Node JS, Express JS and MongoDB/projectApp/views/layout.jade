@@ -1,0 +1,57 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Final Project in Node.JS
+    link(href='stylesheets/style.css' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/e7a9d3d877.js' crossorigin='anonymous')
+    link(rel='stylesheet' type='text/css' href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    .headerLogo
+      .logo
+        h1 FURNITURE.CA
+    #myHeader.topnav
+      a.active(href='/') HOME
+      a.b(href='/about') ABOUT US
+      a.b(href='/contact') CONTACT US
+      .dropdown
+          button.dropbtn(href='#')
+            | PRODUCTS 
+            i.fa.fa-caret-down
+          .dropdown-content
+            a.a(href='/furnitures') FURNITURE
+            a.a(href='/mattresses') MATTRESSES
+            a.a(href='/beddingDeccor') BED & DECCOR
+      a.b(href='/signIn') SIGN IN
+      a.b(href='/signUp') SIGN UP
+      a.b(href='/signOut') SIGN OUT
+      a.b(href='/cart') CART
+      a.icon(href='javascript:void(0);' style='font-size:15px;' onclick='myFunction()') ☰
+    block content
+    footer#footer
+      section.footer
+        .footerEmail
+          p.footerM CONNECT TO US!
+          hr
+          .footerSMedia
+            a(href='https://www.instagram.com/accounts/login/')
+              i.fab.fa-instagram.fa-3x
+            a(href='https://www.facebook.com/')
+              i.fab.fa-facebook.fa-3x
+            a(href='https://ads.twitter.com/login')
+              i.fab.fa-twitter.fa-3x
+            a(href='https://business.linkedin.com/talent-solutions/cx/20/05/jobs-single-cta-11?&src=go-pa&trk=google_job-mktg_s_cid_12255461733_cname_LTS_NAMER_All_CA_Search_Google-Brand_AWR-PRS_Broad_Brand-Alpha_Desktop_English_Core-MKAG_JobsLP__tid_aud-1084281533738:kwd-320556432217_crid_496362431911&veh=google_job-mktg_s_cid_12255461733_cname_LTS_NAMER_All_CA_Search_Google-Brand_AWR-PRS_Broad_Brand-Alpha_Desktop_English_Core-MKAG_JobsLP__tid_aud-1084281533738:kwd-320556432217_crid_496362431911&mcid=6605563925889105922&camid=12255461733&asid=118964764962&targetid=aud-1084281533738:kwd-320556432217&crid=496362431911&placement=&dev=c&sfcid=&cname=LTS_NAMER_All_CA_Search_Google-Brand_AWR-PRS_Broad_Brand-Alpha_Desktop_English_Core-MKAG_JobsLP_&geo=&ends=1&gclid=CjwKCAiAjp6BBhAIEiwAkO9WupuICduTqSbTkfXO-JeaXM6m5qHLafZhmZFHbYNGsNrSXrvGk2pu8xoCUt4QAvD_BwE')
+              i.fab.fa-linkedin.fa-3x
+            a(href='https://www.youtube.com/watch?v=2dyGLM_BMa4')
+              i.fab.fa-youtube.fa-3x
+          h3.footerEM sairon88_05@yahoo.com
+        .footerAction
+          p.footerP
+            | © Final Project in Node.JS, Express.JS with Mongo.DB | Trios Student Class. 2021
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+    script(type='text/javascript' src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+    script(src='javascripts/index.js')

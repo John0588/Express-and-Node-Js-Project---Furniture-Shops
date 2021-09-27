@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  main
+     .cart-container
+    h2#cart Cart
+    #alerts
+    table
+      thead
+        tr
+          th
+            strong Product
+          th
+            strong Price
+      tbody#carttable
+    hr
+    table#carttotals
+      tbody
+        tr
+          td
+            strong Items
+          td
+            strong Total
+        tr
+          td
+            | x 
+            span#itemsquantity 0
+          td
+            | $
+            span#total 0
+    .cart-buttons
+      button#emptycart Empty Cart
+      button#checkout Checkout
+  br
+  br
+  br
+  br
+     

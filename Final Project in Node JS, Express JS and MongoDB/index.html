@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project in Node.JS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/e7a9d3d877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="headerLogo">
+        <div class="logo">
+            <h1>FURNITURE.CA</h1>
+        </div>
+    </div>
+
+    <div class="topnav" id="myHeader">
+        <a href="#home" class="active">HOME</a>
+        <a class="b" href="#a-Us">ABOUT US</a>
+        <a class="b" href="#contactUs">CONTACT US</a>
+        <div class="dropdown">
+            <button href="#" class="dropbtn">PRODUCTS 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="a" href="#">FURNITURE</a>
+                <a class="a" href="#">MATTRESSES</a>
+                <a class="a" href="#">BED & DECCOR</a>
+            </div>
+        </div> 
+        <a class="b" href="#signIn">SIGN IN</a>
+        <a class="b" href="#signUp">SIGN UP</a>
+        <a class="b" href="#">SIGN OUT</a>
+        <a class="b" href="#">CART</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <main>
+        <section id="home">
+            <div class="container-fluid p-0">
+                <div class="site-slider">
+                    <div class="slider-one">
+                        <div>
+                            <img src="./images/image1.jpg" class="img-fluid" alt="Images Front 1" />
+                        </div>
+                        <div>
+                            <img src="./images/image2.jpg" class="img-fluid" alt="Images Front 2" />
+                        </div>
+                        <div>
+                            <img src="./images/image3.jpg" class="img-fluid" alt="Images Front 3" />
+                        </div>
+                        <div>
+                            <img src="./images/image4.jpg" class="img-fluid" alt="Images Front 4" />
+                        </div>
+                    </div>
+                    <div class="slider-btn">
+                        <span class="prev position-top "><i class="fas fa-chevron-left"></i></span>
+                        <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="a-Us">
+            <div class="a-message">
+                <h1>About Us</h1>
+                <br>
+                <h2>Your Trusted Full-Service <font color="var(--blue">FURNITURE.CA</font></h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, doloribus facilis vitae omnis nemo esse itaque id tempore tenetur expedita!</p>
+            </div>   
+            <img src="./images/about-image.jpg" alt="About-Image">    
+        </section>
+    
+        <section id="signIn">
+            <div class="container1">
+                <div class="headerRegis">
+                    <h2>Sign In</h2>
+                </div>
+                <form action="signIn" method="post">
+                    <div class="form">
+                        <div class="input">
+                            <label>Email</label>
+                            <input placeholder="Email" type="email" name="em"/>
+                        </div>
+                        <div class="input">
+                            <label>Password</label>
+                            <input placeholder="Password" type="password" name="pass" />
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="signIn">Sign In</button>
+                    </div>
+                </form>
+                <div class="signP">
+                    <h2>Thank You For Trusting Us!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur praesentium cumque nobis illo atque eveniet maxime facere dolore excepturi.</p>
+                </div>
+            </div>
+        </section>
+        <section id="signUp">
+            <div class="container1">
+                <div class="headerRegis">
+                    <h2>Sign Up</h2>
+                    <p>Already have an account?</p>
+                    <div class="actions">
+                        <a href="index.html#signIn" class="signIn1" name="submit" type="submit" value="Sign In">Sign In</a>
+                    </div>
+                </div>
+                <form action="signUp" method="post">
+                    <div class="form">
+                        <div class="input">
+                            <label>First Name</label>
+                            <input placeholder="First Name" type="text" name="fName" />
+                        </div>
+                        <div class="input">
+                            <label>Last Name</label>
+                            <input placeholder="Last Name" type="text" name="lName" />
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input placeholder="Email" type="email" name="em"/>
+                        </div>
+                        <div class="input">
+                            <label>Password</label>
+                            <input placeholder="Password" type="password" name="pass" />
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <button class="signUp1" name="submit" type="submit" value="Sign Up">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <section id="contactUs">   
+            <form action="contact" method="post">
+                <!-- Contact Left -->
+                <div class="contact-left">
+                    <h1 class="c-l-heading"><font style="border-bottom:5px solid var(--orange);">Writ</font>e Us</h1>
+                    <div class="f-name">
+                        <font>Name:</font>
+                        <input type="text" placeholder="Full Name">
+                    </div>
+    
+                    <div class="f-email">
+                        <font>Email:</font>
+                        <input type="email" placeholder="Email@yahoo.com">
+                    </div>
+                </div>
+    
+                <!-- Contact Right -->
+                <div class="contact-right">
+                    <div class="message">
+                        <font>Message:</font>
+                        <textarea name="message" row="5" cols="20" placeholder="Write Message... ..." type="submit"></textarea> 
+                    </div>
+                        <button>submit</button>
+                </div>
+            </form>
+    
+        </section>
+    </main>
+    
+    <footer id="footer">  
+        <section class="footer">
+            <div class="footerEmail">
+                <p class="footerM">CONNECT TO US!</p>
+                <hr>
+                <div class="footerSMedia">
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram fa-3x"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook fa-3x"></i></a>
+                    <a href="https://ads.twitter.com/login"><i class="fab fa-twitter fa-3x"></i></a>
+                    <a href="https://business.linkedin.com/talent-solutions/cx/20/05/jobs-single-cta-11?&src=go-pa&trk=google_job-mktg_s_cid_12255461733_cname_LTS_NAMER_All_CA_Search_Google-Brand_AWR-PRS_Broad_Brand-Alpha_Desktop_English_Core-MKAG_JobsLP__tid_aud-1084281533738:kwd-320556432217_crid_496362431911&veh=google_job-mktg_s_cid_12255461733_cname_LTS_NAMER_All_CA_Search_Google-Brand_AWR-PRS_Broad_Brand-Alpha_Desktop_English_Core-MKAG_JobsLP__tid_aud-1084281533738:kwd-320556432217_crid_496362431911&mcid=6605563925889105922&camid=12255461733&asid=118964764962&targetid=aud-1084281533738:kwd-320556432217&crid=496362431911&placement=&dev=c&sfcid=&cname=LTS_NAMER_All_CA_Search_Google-Brand_AWR-PRS_Broad_Brand-Alpha_Desktop_English_Core-MKAG_JobsLP_&geo=&ends=1&gclid=CjwKCAiAjp6BBhAIEiwAkO9WupuICduTqSbTkfXO-JeaXM6m5qHLafZhmZFHbYNGsNrSXrvGk2pu8xoCUt4QAvD_BwE"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a href="https://www.youtube.com/watch?v=2dyGLM_BMa4"><i class="fab fa-youtube fa-3x"></i></a>
+                </div>
+                <h3 class="footerEM">sairon88_05@yahoo.com</h3>
+            </div>
+            <div class="footerAction">
+                <p class="footerP">
+                    &copy; Final Project in Node.JS, Express.JS with Mongo.DB | Trios Student Class. 2021
+                </p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

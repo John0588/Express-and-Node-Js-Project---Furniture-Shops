@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  main
+     section#signIn
+        .container1
+          .headerRegis
+            h2 Sign In
+          form(action='signIn' method='post')
+            p #{errorSignIn}
+            .form
+              .input
+                label Email
+                input(placeholder='Email' type='email' name='em')
+              .input
+                label Password
+                input(placeholder='Password' type='password' name='pass')
+            .actions
+              button.signIn Sign In
+          .signP
+            h2 Thank You For Trusting Us!
+            p
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tenetur praesentium cumque nobis illo atque eveniet maxime facere dolore excepturi.

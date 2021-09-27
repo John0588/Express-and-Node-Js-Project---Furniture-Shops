@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  main
+      section#home
+        .container-fluid.p-0
+          .site-slider
+            .slider-one
+              div
+                img.img-fluid(src='./images/image1.jpg' alt='Images Front 1')
+              div
+                img.img-fluid(src='./images/image2.jpg' alt='Images Front 2')
+              div
+                img.img-fluid(src='./images/image3.jpg' alt='Images Front 3')
+              div
+                img.img-fluid(src='./images/image4.jpg' alt='Images Front 4')
+            .slider-btn
+              span.prev.position-top
+                i.fas.fa-chevron-left
+              span.next.position-top.right-0
+                i.fas.fa-chevron-right

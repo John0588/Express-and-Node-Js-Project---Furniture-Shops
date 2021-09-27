@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  main
+     section#signUp
+        .container1
+          .headerRegis
+            p #{errorSignUp}
+            h2 Sign Up
+            p Already have an account?
+            .actions
+              a.signIn1(href='index.html#signIn' name='submit' type='submit' value='Sign In') Sign In
+          form(action='signUp' method='post')
+            .form
+              .input
+                label First Name
+                input(placeholder='First Name' type='text' name='fName')
+              .input
+                label Last Name
+                input(placeholder='Last Name' type='text' name='lName')
+              .input
+                label(for='email') Email
+                input(placeholder='Email' type='email' name='em')
+              .input
+                label Password
+                input(placeholder='Password' type='password' name='pass')
+            .actions
+              button.signUp1(name='submit' type='submit' value='Sign Up') Sign Up

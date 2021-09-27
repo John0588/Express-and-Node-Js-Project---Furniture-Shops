@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  main
+      h1#beddingDeccor.fca BEDDING & DECCOR
+    .container
+      .productcont
+        .product
+          h3.productname Deccor 1
+          img(src='./images/image5.jpg' alt='')
+          p.sale NEW ITEM
+          p.price $100
+          button.addtocart Add To Cart
+        .product
+          h3.productname Deccor 2
+          img(src='./images/image6.jpg' alt='')
+          p.sale HOT SALE
+          p.price $250
+          button.addtocart Add To Cart
+        .product
+          h3.productname Deccor 3
+          img(src='./images/image7.jpg' alt='')
+          p.sale ON SALE
+          p.price $400
+          button.addtocart Add To Cart
+    .cart-container
+      h2#cart Cart
+      #alerts
+      table
+        thead
+          tr
+            th
+              strong Product
+            th
+              strong Price
+        tbody#carttable
+      hr
+      table#carttotals
+        tbody
+          tr
+            td
+              strong Items
+            td
+              strong Total
+          tr
+            td
+              | x 
+              span#itemsquantity 0
+            td
+              | $
+              span#total 0
+      .cart-buttons
+        button#emptycart Empty Cart
+        button#checkout Checkout

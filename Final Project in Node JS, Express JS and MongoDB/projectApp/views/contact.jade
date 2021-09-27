@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  main
+     section#contactUs
+      p(style='font-size: 20px; font-weight: 700; color: var(--primary-color); font-family: var(--sofia); margin-top: -750px; position: absolute;') #{errorSignIn}
+      p(style='font-size: 15px; font-weight: 700; color: var(--primary-color); font-family: var(--sofia); margin-top: -650px; position: absolute;') #{successSignIn}
+        form(action='contact' method='post')
+          // Contact Left
+          .contact-left
+            h1.c-l-heading
+              font(style='border-bottom:5px solid var(--orange);') Writ
+              | e Us
+            .f-name
+              font Full Name:
+              input(type='text' placeholder='Full Name' name='fName')
+            .f-email
+              font Email:
+              input(type='email' placeholder='Email@yahoo.com' name="em")
+          // Contact Right
+          .contact-right
+            .message
+              font Message:
+              textarea(name='message' row='5' cols='20' placeholder='Write Message... ...' type='submit')
+            button submit
